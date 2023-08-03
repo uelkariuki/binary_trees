@@ -9,7 +9,7 @@
 */
 bst_t *bst_search(const bst_t *tree, int value)
 {
-	bst_t *current = tree;
+	bst_t *current = (bst_t *)tree;
 
 	if (tree == NULL)
 		return (NULL);

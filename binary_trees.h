@@ -55,6 +55,7 @@ bool valid_bst(const binary_tree_t *tree, int minimum, int maximum);
 int binary_tree_is_avl(const binary_tree_t *tree);
 bst_t *array_to_bst(int *array, size_t size);
 avl_t *array_to_avl(int *array, size_t size);
+bst_t *bst_remove(bst_t *root, int value);
 typedef struct binary_tree_s avl_t;
 
 #endif /*BINARY_TREES_H*/

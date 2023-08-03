@@ -34,7 +34,7 @@ bool valid_bst(const bst_t *tree, int minimum, int maximum)
  *
 */
 
-int binary_tree_is_bst(const binary_tree_t *tree)
+int binary_tree_is_bst(const bst_t *tree)
 {
 	if (tree == NULL)
 		return (0);

@@ -45,7 +45,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
-int binary_tree_is_bst(const binary_tree_t *tree);
+int binary_tree_is_bst(const bst_t *tree);
 bool valid_bst(const bst_t *tree, int minimum, int maximum);
 
 #endif /*BINARY_TREES_H*/

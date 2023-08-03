@@ -9,15 +9,16 @@
  * Return: True if valid bst, false otherwise
 */
 
-bool valid_bst(const bst_t *tree, int minimum, int maximum)
+bool valid_bst(const binary_tree_t *tree, int minimum, int maximum)
 {
+	bool left, right;
 	if (tree == NULL)
 		return (true);
 	if (tree->n < minimum || tree->n > maximum)
 		return (false);
 
-	bool left = valid_bst(tree->left, minimum, tree->n - 1);
-	bool right = valid_bst(tree->right, tree->n + 1, maximum);
+	left = valid_bst(tree->left, minimum, tree->n - 1);
+	right = valid_bst(tree->right, tree->n + 1, maximum);
 
 	 /*both left and right must be true for it to be a valid bst*/
 	if (left == true && right == true)
@@ -34,7 +35,7 @@ bool valid_bst(const bst_t *tree, int minimum, int maximum)
  *
 */
 
-int binary_tree_is_bst(const bst_t *tree)
+int binary_tree_is_bst(const binary_tree_t *tree)
 {
 	if (tree == NULL)
 		return (0);

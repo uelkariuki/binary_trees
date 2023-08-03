@@ -9,7 +9,7 @@
  * Return: True if valid bst, false otherwise
 */
 
-bool valid_bst(const binary_tree_t *tree, int minimum, int maximum)
+bool valid_bst(const bst_t *tree, int minimum, int maximum)
 {
 	if (tree == NULL)
 		return (true);

@@ -48,5 +48,7 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 int binary_tree_is_bst(const binary_tree_t*tree);
 bool valid_bst(const binary_tree_t *tree, int minimum, int maximum);
+int binary_tree_is_avl(const binary_tree_t *tree);
+typedef struct binary_tree_s avl_t;
 
 #endif /*BINARY_TREES_H*/

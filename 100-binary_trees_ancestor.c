@@ -10,14 +10,16 @@
 binary_tree_t *lowest_common_ancestor(binary_tree_t *root,
 const binary_tree_t *first, const binary_tree_t *second)
 {
+	binary_tree_t *left_ancestor, *right_ancestor;
+
 	if (root == NULL || root == first || root == second)
 		return (root);
 
 	first = (binary_tree_t *)first;
 	second = (binary_tree_t *)second;
-	binary_tree_t *left_ancestor = lowest_common_ancestor(root->left, first,
+	left_ancestor = lowest_common_ancestor(root->left, first,
 	second);
-	binary_tree_t *right_ancestor = lowest_common_ancestor(root->right, first,
+	right_ancestor = lowest_common_ancestor(root->right, first,
 	second);
 
 	if (left_ancestor && right_ancestor)

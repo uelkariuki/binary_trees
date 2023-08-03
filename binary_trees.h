@@ -53,6 +53,7 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 int binary_tree_is_bst(const binary_tree_t *tree);
 bool valid_bst(const binary_tree_t *tree, int minimum, int maximum);
 bst_t *bst_insert(bst_t **tree, int value);
+bst_t *bst_search(const bst_t *tree, int value);
 int binary_tree_is_avl(const binary_tree_t *tree);
 typedef struct binary_tree_s avl_t;
 

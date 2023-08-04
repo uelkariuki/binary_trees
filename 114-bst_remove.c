@@ -39,6 +39,7 @@ bst_t *bst_remove(bst_t *root, int value)
 		/*found the in-order successor, replace value of to be removed node*/
 		/*with the value in the in-order successor*/
 		root->n = temp->n;
+		temp->n = value;
 		root->right = bst_remove(root->right, temp->n); /*remove the node*/
 	}
 	return (root);

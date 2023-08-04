@@ -1,5 +1,11 @@
 #include "binary_trees.h"
 
+/**
+ * is_heap- helper function to help know if is heap
+ * @tree: a pointer to the root node of the tree to check
+ * Return: True if is heap otherwise false
+ *
+*/
 bool is_heap(const binary_tree_t *tree)
 {
 	if (tree == NULL)

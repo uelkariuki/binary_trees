@@ -1,5 +1,14 @@
 #include "binary_trees.h"
-
+/**
+ * free_node - frees a node
+ * @node: node to free
+ * Return: NULL after freeing
+*/
+void *free_node(bst_t *node)
+{
+	free(node);
+	return (NULL);
+}
 /**
  * bst_insert - insert into a binary search tree
  * @tree: double pointer to the tree
@@ -46,7 +55,7 @@ bst_t *bst_insert(bst_t **tree, int value)
 				}
 			}
 			else
-				return (NULL);
+				return (free_node(new_node));
 		}
 	}
 	return (NULL);

@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+
 /**
  * bst_insert - insert into a binary search tree
  * @tree: double pointer to the tree
@@ -6,6 +7,7 @@
  *
  * Return: pointer to the inserted node
 */
+
 bst_t *bst_insert(bst_t **tree, int value)
 {
 	bst_t *new_node, *temp, *parent = NULL;

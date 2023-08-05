@@ -1,6 +1,6 @@
 # 0x1D. C - Binary trees
 
-**CATEGORY: `C` `Group project` `Algorithm` `Data structure`**
+**CATEGORIES: `C` `Group project` `Algorithm` `Data structure`**
 
 **Data structures**
 
